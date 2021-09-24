@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bar</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        .boxcente {
+            text-align: left;
+            width: 50%;
+            position: relative;
+            left: 25%;
+            border-width: 6px;
+        }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="barchart.js"></script>
+    <script src="barchart1.js"></script>
+    <script src="barchart2.js"></script>
+    <script src="feedback.js"></script>
+</head>
+
+<body style="background-color:black;">
+    <div class="container" style="height:100%;width:100%;">
+        <div class="header">
+            <ul class="nav">
+                <li>
+                    <a href="#cocktail" class="smoothScroll">
+                        <div class="word">Cocktail</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="smoothScroll">
+                        <div class="word">About</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#rate" class="smoothScroll">
+                        <div class="word">Rate</div>
+                    </a>
+                </li>
+            </ul>
+            <a href="#home">
+                <div class="logo">BREEZE</div>
+            </a>
+        </div>
+
+
+
+        <div class="pic a1" id="home">
+				<div style="position:relative;top:19.5%;left:28%;z-index:1"><img src="pic/logo.png" height="400" width="700"></div>
+            <div style="height:80%; width:100%;background-color:black;opacity:0.65;
+            position:absolute;top:15%;z-index:0"></div>
+        </div>
+        <div style="height:2%;"></div>
+
+        <div class="pic a2" id="cocktail">
+            <div style="height:30%;width:30%;border:13px solid black;position:absolute;
+                   top:151%;left:34%;z-index:1;">
+                <h1 style="font-size:70px;position:relative;text-align:center;top:42%">COCKTAIL.</h1>
+            </div>
+            <div style="height:80%; width:100%;background-color:white;opacity:0.4;position:relative;top:10%;">
+        </div>
+        </div>
+		<div style="height:0.5%;"></div>
+		<div calss="b1">
+		<div class="w3-content" style="max-width:800px;position:relative;left:28%">
+<div class="w3-display-container mySlides">
+  <img src="pic/vodkalime.jpg" height="500" width="650" style="position:relative;left:2%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+    <div style="background-color:black;opacity:0.6;position:absolute;top:40%;left:2%">
+                <h1 style="color:white;">Vodka Lime<br></h1>
+                <p style="color:white;">&nbsp;shake 15秒<br>
+				&nbsp; 材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;伏特加 1.5oz、萊姆汁0.75 oz<br>
+				&nbsp;做法<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.檸檬片沾濕杯口，以滾動方式將杯口沾上一圈鹽巴。&nbsp;&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.杯子裝入六分滿冰塊。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.量取伏特加和萊姆汁倒入，攪拌均勻。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;4.以檸檬片裝飾。<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/salty-dog.jpg" height="500" width="600" style="position:relative;left:2%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-hor-16 w3-black">
+<div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:10%">
+                <h1 style="color:white;">Salty Dog<br></h1>
+                <p style="color:white;">&nbsp;shake 10秒<br>
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;伏特加 1.5oz、葡萄柚汁八分滿<br>
+				&nbsp;做法:<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.檸檬片沾濕杯口，以滾動方式於杯口沾上一圈鹽巴。&nbsp;&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.杯中裝入六分滿冰塊。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.量取伏特加倒入，加葡萄柚汁至八分滿即成。<br>
+                </p>
+       </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/screwdriver.png" height="500" width="700">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-hor-16 w3-black">
+    <div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:0%">
+                <h1 style="color:white;">Screwdriver<br></h1>
+                <p style="color:white;">&nbsp;shake 10秒<br>
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;伏特加 1oz、柳橙汁八分滿<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.杯子裝入六分滿冰塊。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.量取伏特加倒入，加柳橙汁至八分滿。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.可放入柳橙片為裝飾，放入調酒棒即可啜飲。&nbsp;&nbsp;<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/gin-tonic.jpg" height="500" width="650" style="position:relative;left:1.2%" >
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:1.2%">
+                <h1 style="color: white;">Gin Tonic</h1>
+                <p style="color: white;">&nbsp;shake 10秒 <br>
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;琴酒 1.5oz、通寧水八分滿<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.杯子裝入六分滿冰塊，量取琴酒倒入。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.通寧水加至八分滿。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.攪拌均勻後，放入調酒棒；可將檸檬片輕抹杯口丟入，增加香味。&nbsp;&nbsp;<br>
+                </p>
+            </div>
+  </div>
+</div>
+<div style="height:2%;"></div>
+<div class="w3-display-container mySlides">
+  <img src="pic/orange.jpg" height="500" width="650" style="position:relative;left:2%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+    <div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:2%">
+                <h1 style="color: white;">Orange Blossom</h1>
+                <p style="color: white;">&nbsp;shake 10秒<br>
+				&nbsp;材料：<br>
+				&nbsp;琴酒 1oz、柳橙汁 2 oz<br> 
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.將雞尾酒杯放於冰箱中冰鎮。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.搖酒器裝入1/2杯冰塊，依序加入琴酒和柳橙汁，搖盪均勻。&nbsp;&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.將飲料過濾，倒入事先冰鎮好的雞尾酒杯即可啜飲。<br>
+                </p>
+            </div>
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="pic/cubacoke.jpg" height="500" width="500" style="position:relative;left:12%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:12%">
+                <h1 style="color: white;">Cuba Libre</h1>
+                <p style="color: white;">&nbsp;shake 10秒 <br>
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;波本威士忌 1.5oz、可樂八分滿<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.杯子裝入六分滿冰塊，量取波本威士忌倒入。&nbsp;&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.可樂加至八分滿。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.攪拌均勻，放入調酒棒，以檸檬角做為裝飾。<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/daiquiri.jpg" height="500" width="450" style="position:relative;left:15%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:15%">
+                <h1 style="color: white;">Daiquiri</h1>
+                <p style="color: white;">&nbsp;shake 10秒 <br>
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp白蘭姆酒2oz、新鮮萊姆汁1oz、黑糖糖漿3/4oz&nbsp;&nbsp;&nbsp; <br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.將所有材料及冰加進調酒杯，完全搖勻<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.倒進已冷凍的酒杯內<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.以檸檬皮點綴<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/whiskeycola.jpg" height="500" width="650">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:50%">
+                <h1 style="color: white;">Bourbon Coke</h1>
+                <p style="color: white;">&nbsp;shake 10秒 <br>
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;白色蘭姆酒 1.5oz、可樂八分滿&nbsp;<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.杯子裝入六分滿冰塊，量取蘭姆酒倒入。&nbsp;&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.可樂加至八分滿。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.攪拌均勻，以檸檬片裝飾。<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/sloe-gin-fizz.jpg" height="500" width="600" style="position:relative;left:5%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:5%">
+                <h1 style="color: white;">Sloe Gin Fizz</h1>
+                <p style="color: white;">&nbsp;shake 10秒 <br>
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;野莓琴酒 1.5oz、現榨萊姆汁 0.5oz、純糖漿 1 tsp、蘇打水適量&nbsp;&nbsp;&nbsp;<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.可林杯放入冰塊，攪拌冰杯後將融水倒出。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.雪克杯加入除蘇打水外所有材料及冰塊，搖盪均勻。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.濾掉冰塊，將酒液倒入冰鎮過的可林杯。<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/Margarita.jpg" height="500" width="450" style="position:relative;left:13%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:13%">
+                <h1 style="color: white;">Margarita</h1>
+                <p style="color: white;">&nbsp;shake 10秒 <br>
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp新鮮萊姆汁1 oz、橙酒0.5 oz，龍舌蘭2 oz、裝飾：猶太鹽&nbsp;&nbsp;&nbsp;<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.將所有材料及冰加進調酒杯，完全搖勻<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.過濾完加進滿冰的矮身酒杯中<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.可選：以檸檬皮及猶太鹽裝飾杯邊<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/cosmo.jpg" height="500" width="450" style="position:relative;left:15%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:48%;left:15%">
+                <h1 style="color: white;">Cosmopolitan</h1>
+                <p style="color: white;">&nbsp;shake 10秒 <br>
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp檸檬伏特加1.5 oz、君度橙酒）1 oz、新鮮萊姆汁0.5 oz&nbsp;&nbsp;&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp少量紅莓汁<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.將所有材料及冰加進調酒杯，完全搖勻<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.倒進已冰凍好的酒杯<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.以檸檬皮裝飾杯邊<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/mojito.jpg" height="500" width="650" style="position:relative;left:1%"">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:40%;left:1%">
+                <h1 style="color: white;">Mojito</h1>
+                <p style="color: white;">
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3塊薄荷葉、白蘭姆酒2 oz、新鮮萊姆汁2 oz、糖漿0.5 oz、蘇打水至滿杯&nbsp;&nbsp;&nbsp;<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.先將薄荷葉在調酒杯來壓碎<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.加入蘭姆酒、萊姆汁、糖漿及冰，短暫搖勻<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.倒進本身已有冰粒的高身酒杯<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;4. 再將梳打水倒入酒杯<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;5. 可以薄荷葉及檸檬皮裝飾<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/VodkaMartini.jpg" height="500" width="450" style="position:relative;left:10%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:60%;left:10%">
+                <h1 style="color: white;">Vodka Martini</h1>
+                <p style="color: white;">&nbsp;shake 20~30秒
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;伏特加2.5 oz、乾苦艾酒0.5 oz、少量柑橘苦精、 裝飾：檸檬皮&nbsp;&nbsp;&nbsp;<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.將所有材料加進調酒杯，將冰以及材料搖勻，約 20-30秒<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.倒進已冷藏的酒杯<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.用檸檬皮裝飾<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/negroni.jpg" height="500" width="550" style="position:relative;left:8%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:52%;left:8%">
+                <h1 style="color: white;">Negroni</h1>
+                <p style="color: white;">&nbsp;shake 20~30秒
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;琴酒1 oz、金巴利酒1 oz、甜苦艾酒1 oz、 裝飾：橙皮&nbsp;&nbsp;&nbsp;<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.將所有材料加進調酒杯，將冰以及材料搖勻<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.倒進酒杯，使用大顆冰粒<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.以橙皮裝飾<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/WhiteRussian.jpg" height="500" width="650" style="position:relative;">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:50%;">
+                <h1 style="color: white;">White Russian</h1>
+                <p style="color: white;">
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;伏特加2 oz、咖啡香甜酒1 oz、 鮮奶1 oz&nbsp;&nbsp;&nbsp;&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;裝飾物 : 柳橙片<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.直接將所有材料加到杯中<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+
+<div class="w3-display-container mySlides">
+  <img src="pic/longisland.jpg" height="500" width="600" style="position:relative;left:3%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:62%;left:3%">
+                <h1 style="color: white;">Iongisland Icetea</h1>
+                <p style="color: white;">
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;伏特加1 oz、琴酒1 oz、白蘭姆酒1 oz、 君度橙酒1 oz<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;龍舌蘭酒0.2 oz、新鮮萊姆汁0.5 oz、新鮮柳橙汁2 oz、可樂適量<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.將所有材料與冰塊放入古典杯（威杯）中，攪拌均勻冷卻即可。&nbsp;&nbsp;&nbsp;<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+
+<div class="w3-display-container mySlides">
+  <img src="pic/sun rise.jpg" height="500" width="600" style="position:relative;left:3%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:3%">
+                <h1 style="color: white;">Sunrise</h1>
+                <p style="color: white;">
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;龍舌蘭1 oz、柳橙汁3 oz、紅石榴糖漿0.3 oz、裝飾物 : 柳橙片、紅櫻桃<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.把冰塊放入杯中加入龍舌蘭與柳橙汁<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.緩緩倒入紅石榴糖漿做出漸層<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.	放上柳橙片與紅櫻桃裝飾<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/godfather.jpg" height="500" width="550" style="position:relative;left:8%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:60%;left:8%">
+                <h1 style="color: white;">Godfather</h1>
+                <p style="color: white;">
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;蘇格蘭威士忌1 oz、杏仁利口酒1 oz、甜苦艾酒1 oz、 裝飾：橙皮&nbsp;&nbsp;&nbsp;<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.將所有材料與冰塊放入古典杯（威杯）中，攪拌均勻冷卻即可。<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pic/sex.jpg" height="500" width="500" style="position:relative;left:10%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:10%">
+                <h1 style="color: white;">Sex on the Beach</h1>
+                <p style="color: white;">shaking20秒
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;伏特加1.5 oz、水蜜桃香甜酒0.75 oz、 鳳梨汁2 oz、蔓越莓汁2 oz&nbsp;&nbsp;&nbsp;&nbsp;<br>
+				裝飾物 : 柳橙片<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.搖酒器裝入半杯冰塊，依序加入全部材料，搖盪至外部結霜。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.取一只8oz+酒杯，裝入六分滿冰塊，將酒液過濾後倒入。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.以柳橙皮、柳橙片作為裝飾。<br>
+                </p>
+            </div>
+  </div>
+</div>
+
+
+<div class="w3-display-container mySlides">
+  <img src="pic/mai-tai.jpg" height="500" width="600" style="position:relative;left:10%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-hor-16 w3-black">
+     <div style="background-color:black;opacity:0.6;position:absolute;top:50%;left:10%">
+                <h1 style="color: white;">Mai-tai</h1>
+                <p style="color: white;">shaking20秒
+				&nbsp;材料：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;白蘭姆酒1 oz、深蘭姆酒0.6 oz、 橙酒0.3 oz、檸檬汁0.3 oz&nbsp;&nbsp;&nbsp;&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;鳳梨汁0.3oz、檸檬汁 0.3 oz<br>
+				&nbsp;做法：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;1.深蘭姆酒外的材料到到搖酒杯裡，搖盪至外部結霜。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;2.倒入裝滿冰塊的白蘭地杯中。<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3.利用吧匙慢慢地將深蘭姆酒倒入杯中，讓深蘭姆酒漂浮在上方。<br>
+                </p>
+            </div>
+  </div>
+</div>
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:52%;left:-8%" onclick="plusDivs(-1)"><img src="pic/箭頭2.png" height="20" width="20"/></a>
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:52%;right:8%" onclick="plusDivs(1)"><img src="pic/箭頭1.png" height="20" width="20"/></a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+        </div>
+		<div class="pic a3" id="about">
+            <div style="height:30%;width:30%;border:13px solid black;position:absolute;
+                   top:335%;left:34%;z-index:1;">
+                <h1 style="font-size:80px;position:relative;text-align:center;top:42%">ABOUT.</h1>
+            </div>
+            <div style="height:80%; width:100%;background-color:white;opacity:0.4;position:relative;top:10%;">
+            </div>
+        </div>
+		<div style="height:0.5%;"></div>
+        <div class="b">
+            <div id="chart_div"></div>
+            <div id="chart1_div"></div>
+            <div id="chart2_div"></div>
+        </div>
+
+       <div class="pic a4" id="rate">
+            <div style="height:30%;width:30%;border:13px solid white;position:absolute;
+                   top:538%;left:34%;z-index:1;">
+                <h1 style="font-size:80px;position:relative;text-align:center;top:42%;color:white">RATE.</h1>
+            </div>
+            <div style="height:80%; width:100%;background-color:black;opacity:0.7;position:relative;top:10%;">
+            </div>
+        </div>
+		<div style="height:0.5%;"></div>
+		<div style="height:2%;background-color:Linen;"></div>
+
+        <div class="b2" id="feedback" style="color:black;position:absolute">
+            <form action="feedback.php" method="POST">
+                <h1 style="color: black;position:relative;left:42.5%;">調酒人氣調查<br></h1>
+                <p style="color:black;font-size:15px;position:relative;left:30%;" id="form1">
+                    <strong>選出自己最喜歡的一種酒:</strong><br>
+                    <label>
+                    <input name="wine" type="radio" value="Salty Dog" checked>Salty Dog</label>
+                    <label>
+                    <input name="wine" type="radio" value="Vodka Lime">Vodka Lime</label>
+                    <label>
+                    <input name="wine" type="radio" value="Screwdriver">Screwdriver</label>
+                    <label>
+                    <input name="wine" type="radio" value="Orange Blossom">Orange Blossom</label>
+                    <label>
+                    <input name="wine" type="radio" value="Gin Tonic">Gin Tonic</label><br>
+                    <label>
+                    <input name="wine" type="radio" value="Cuba Libre">Cuba Libre</label>
+                    <label>
+                    <input name="wine" type="radio" value="California Punch">California Punch</label>
+                    <label>
+                    <input name="wine" type="radio" value="Bourbon Coke">Bourbon Coke</label>
+                    <label>
+                    <input name="wine" type="radio" value="The Kalimotxo">The Kalimotxo</label>
+                    <label>
+                    <input name="wine" type="radio" value="Untouchable">Untouchable</label><br>
+                    <label>
+                    <input name="wine" type="radio" value="Sloe Gin Fizz">Sloe Gin Fizz</label>
+                    <label>
+                    <input name="wine" type="radio" value="Daiquiri">Daiquiri</label>
+                    <label>
+                    <input name="wine" type="radio" value="Margarita">Margarita</label>
+                    <label>
+                    <input name="wine" type="radio" value="Cosmopolitan">Cosmopolitan</label>
+                    <label>
+                    <input name="wine" type="radio" value="Mojito">Mojito</label><br>
+                    <label>
+                    <input name="wine" type="radio" value="Vodka Martini">Vodka Martini</label>
+                    <label>
+                    <input name="wine" type="radio" value="Gin and Tonic">Gin and Tonic</label>
+                    <label>
+                    <input name="wine" type="radio" value="Negroni">Negroni</label>
+                    <label>
+                    <input name="wine" type="radio" value="Godfather">Godfather</label>
+                    <label>
+                    <input name="wine" type="radio" value="Long Island Iced Tea">Long Island Iced Tea</label><br>
+                </p>
+                <p style="color:black;position:relative;left:30.5%;top:25%">
+                    <strong>Your email:</strong><br>
+                    <input name="mail" type="tel" class="form-control" placeholder="s#######@mail.yzu.edu.tw" pattern="s\d{7}@mail.yzu.edu.tw" required />
+                </p>
+                <p>
+                    <input type="submit" value="Submit" style="position:relative;left:30.5%;top:25%">
+                </p>
+            </form>
+            <h1 style="color:black;position:relative;left:30.5%;top:5%">調酒票數統計</h1>
+            <div id="recall" style="color:black;">
+            </div>
+            <input type="button" value="count" id="sub" style="position:relative;left:31%;top:8%">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
