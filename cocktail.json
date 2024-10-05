@@ -1,0 +1,175 @@
+{
+    "cocktails": [
+        {
+            "name": "Vodka Lime",
+            "image":"pic/vodkalime.jpg",
+            "ingredients": [
+                { "name": "伏特加", "amount": "1.5 oz" },
+                { "name": "檸檬汁", "amount": "0.75 oz" }
+            ],
+            "method": [
+                "檸檬片沾濕杯口，以滾動方式將杯口沾上一圈鹽巴。",
+                "杯子裝入六分滿冰塊",
+                "量取伏特加和萊姆汁倒入，攪拌均勻",
+                "以檸檬片裝飾"
+            ]
+        },
+        {
+            "name": "Gin Tonic",
+            "image":"pic/gin-tonic.jpg",
+            "ingredients": [
+                { "name": "琴酒", "amount": "1.5 oz" },
+                { "name": "通寧水", "amount": "補滿" }
+            ],
+            "method": [
+                "杯子裝入六分滿冰塊，量取琴酒倒入",
+                "通寧水加至八分滿",
+                "攪拌均勻後，放入調酒棒；可將檸檬片輕抹杯口丟入，增加香味"
+            ]
+        },
+        {
+            "name": "God Father",
+            "image":"pic/godfather.jpg",
+            "ingredients": [
+                { "name": "蘇格蘭威士忌", "amount": "1 oz" },
+                { "name": "杏仁利口酒", "amount": "1 oz" },
+                { "name": "甜苦艾酒", "amount": "1 oz" }
+            ],
+            "method": [
+                "將所有材料與冰塊放入古典杯（威杯）中，攪拌均勻冷卻即可",
+                "以橙皮裝飾"
+            ]
+        },
+        {
+            "name": "Longisland Icetea",
+            "image":"pic/longisland.jpg",
+            "ingredients": [
+                { "name": "伏特加", "amount": "1 oz" },
+                { "name": "琴酒", "amount": "1 oz" },
+                { "name": "白蘭地酒", "amount": "1 oz" },
+                { "name": "君度橙酒", "amount": "1 oz" },
+                { "name": "龍舌蘭酒", "amount": "0.2 oz" },
+                { "name": "檸檬汁", "amount": "0.5 oz" },
+                { "name": "新鮮柳橙汁", "amount": "2 oz" },
+                { "name": "可樂", "amount": "適量" }
+            ],
+            "method": [
+                "所有材料放入 shake 杯中搖盪，倒入裝滿冰塊的可林杯中",
+                "最後補上可樂"
+            ]
+        },
+        {
+            "name": "Mojito",
+            "image":"pic/mojito.jpg",
+            "ingredients": [
+                { "name": "薄荷葉", "amount": "3 片" },
+                { "name": "白蘭地酒", "amount": "2 oz" },
+                { "name": "檸檬汁", "amount": "2 oz" },
+                { "name": "糖漿", "amount": "0.5 oz" },
+                { "name": "蘇打水", "amount": "適量" }
+            ],
+            "method": [
+                "先將薄荷葉在調酒杯來壓碎",
+                "加入蘭姆酒、萊姆汁、糖漿及冰，短暫搖勻",
+                "倒進本身已有冰粒的高身酒杯",
+                "再將蘇打水倒入酒杯",
+                "可以薄荷葉及檸檬皮裝飾"
+            ]
+        },
+        {
+            "name": "Orange Blossom",
+            "image":"pic/orange.jpg",
+            "ingredients": [
+                { "name": "琴酒", "amount": "1 oz" },
+                { "name": "柳橙汁", "amount": "2 oz" }
+            ],
+            "method": [
+                "將雞尾酒杯放於冰箱中冰鎮。",
+                "搖酒器裝入1/2杯冰塊，依序加入琴酒和柳橙汁，搖盪均勻",
+                "將飲料過濾，倒入事先冰鎮好的雞尾酒杯即可啜飲"
+            ]
+        },
+        {
+            "name": "Screwdriver",
+            "image":"pic/screwdriver.png",
+            "ingredients": [
+                { "name": "伏特加", "amount": "1 oz" },
+                { "name": "柳橙汁", "amount": "適量" }
+            ],
+            "method": [
+                "杯子裝入六分滿冰塊。",
+                "量取伏特加倒入，加柳橙汁至八分滿",
+                "可放入柳橙片為裝飾，放入調酒棒即可啜飲"
+            ]
+        },
+        {
+            "name": "Sunrise",
+            "image":"pic/sun rise.jpg",
+            "ingredients": [
+                { "name": "龍舌蘭", "amount": "1 oz" },
+                { "name": "柳橙汁", "amount": "3 oz" },
+                { "name": "紅石榴糖漿", "amount": "0.3 oz" }
+            ],
+            "method": [
+                "把冰塊放入杯中加入龍舌蘭與柳橙汁",
+                "緩緩倒入紅石榴糖漿做出漸層",
+                "放上柳橙片與紅櫻桃裝飾"
+            ]
+        },
+        {
+            "name": "Whisky Coke",
+            "image":"pic/whiskeycola.jpg",
+            "ingredients": [
+                { "name": "威士忌", "amount": "1 oz" },
+                { "name": "檸檬角", "amount": "1 個" },
+                { "name": "可樂", "amount": "適量" }
+            ],
+            "method": [
+                "杯子加滿冰塊，加入威士忌、檸檬角稍微擠壓後丟入杯中",
+                "最後補上可樂，攪拌"
+            ]
+        },
+        {
+            "name": "White Russian",
+            "image":"pic/WhiteRussian.jpg",
+            "ingredients": [
+                { "name": "伏特加", "amount": "1 oz" },
+                { "name": "咖啡香甜酒", "amount": "1 oz" },
+                { "name": "鮮奶", "amount": "1 oz" }
+            ],
+            "method": [
+                "直接將所有材料加到杯中，搖晃均勻",
+                "最後柳橙片裝飾"
+            ]
+        },
+        {
+            "name": "Salty Dog",
+            "image":"pic/salty-dog.jpg",
+            "ingredients": [
+                { "name": "伏特加", "amount": "1.5 oz" },
+                { "name": "葡萄柚汁", "amount": "適量" }
+            ],
+            "method": [
+                "檸檬片沾濕杯口，以滾動方式於杯口沾上一圈鹽巴",
+                "杯中裝入六分滿冰塊",
+                "量取伏特加倒入，加葡萄柚汁至八分滿即成"
+            ]
+        },
+        {
+            "name": "Mai Tai",
+            "image":"pic/mai-tai.jpg",
+            "ingredients": [
+            { "name": "白蘭姆酒", "amount": "1 oz" },
+            { "name": "深蘭姆酒", "amount": "0.6 oz" },
+            { "name": "橙酒", "amount": "0.3 oz" },
+            { "name": "檸檬汁", "amount": "0.3 oz" },
+            { "name": "鳳梨汁", "amount": "0.3 oz" }
+            ],
+            "method": [
+            "深蘭姆酒外的材料倒入搖酒杯裡，搖盪至外部結霜",
+            "倒入裝滿冰塊的酒杯，利用吧匙將深蘭姆酒倒入杯中"
+            ]
+        }
+    ]
+  }
+  

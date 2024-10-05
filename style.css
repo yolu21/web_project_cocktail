@@ -1,103 +1,191 @@
-.header {
-    background-color: rgb(90, 20, 18);
-    opacity: 0.9;
-    height: 10%;
-    width: 100%;
-    padding: 0px;
-    position: fixed;
-    z-index: 2;
-    overflow-x: hidden;
-}
-
-.logo {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 600px;
-    position: absolute;
-    left: 1%;
-    top: 30%;
-}
-
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: linen;
+    height: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(90, 20, 18);
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    z-index: 3;
+    overflow-x: hidden;
+}
+.nav {
+    display: flex;
+    gap: 30px;
 }
 
-
-/*插入導覽列*/
-
-.word {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 100px;
+.nav li{
+    margin-top: 0;
+    list-style-type: none;
+    position: relative;
+    float: right;
+    
 }
-
-a {
+.breeze-word{
+    font-size: 2.5rem;
+    margin-left: 30px;
+    color: linen;
+}
+a{
     text-decoration: none;
 }
-
-.nav li {
-    position: relative;
-    left: 80%;
-    float: left;
-    margin-top: 25px;
+.word{
+    color: linen;
+    font-size: 1.5rem;
     margin-right: 30px;
-    list-style-type: none;
-    list-style-image: url(images/icon.gif);
 }
-
-.container {
-    opacity: 0.9;
-    margin: 0 auto;
-    padding: 0px;
-    position: absolute;
-    line-height: 28px;
-}
-
 .pic {
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover; 
+    height: 100vh; 
+    width: 100%; 
     background-attachment: fixed;
-    background-position: center center;
-    line-height: 28px;
+    background-repeat: no-repeat;
+    background-position: center center; 
+
+}
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
     z-index: 1;
 }
-
-.a1 {
-    background-image: url("pic/6.jpg");
-}
-
-.a2 {
-    background-image: url("pic/2.jpg");
-}
-
-.a3 {
-    background-image: url("pic/8.jpg");
-}
-
-.a4 {
-    background-image: url("pic/vote.jpg");
-}
-
-.b {
-    height: 88%;
+.light-overlay{
+    height: 80%; 
     width: 100%;
-    background-color: black;
+    background-color: rgb(255, 255, 255, 0.4);
+    position: absolute; 
+    top: 10%;
+    left: 0;
+    z-index: 0; 
+    border: none;
+}
+.dark-overlay{
+    height: 80%; 
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: absolute; 
+    top: 10%;
+    left: 0;
+    z-index: 0; 
+    border: none;
+}
+.logo {
+    width: 700px;
+    height: 400px;
+}
+.space{
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+}
+#home{
+    background-image: url('pic/home.jpg'); 
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+#cocktail{
+    background-image: url('pic/cocktail.jpg'); 
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+#about{
+    background-image: url('pic/about.jpg'); 
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+#rate{
+    background-image: url('pic/vote.jpg'); 
+    color: white;
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+.dark-square{
+    height:30%;
+    width:30%;
+    border:13px solid black;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.light-square{
+    height:30%;
+    width:30%;
+    border:13px solid white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.theme-word{
+    font-size: 60px;
 }
 
-.b1 {
-    height: 100%;
-    width: 100%;
-    background-color: black;
+#cocktail-list {
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    position: relative;
+    
+}
+.cocktail-container {
+    padding: 20px;
+    margin: 20px 10px;
+    width: 95%;
+    height: 700px;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+    display: none;
+    position: relative;
 }
 
-.b2 {
-    height: 200%;
+.cocktail-container.active {
+    opacity: 1;
+    display: block; 
+}
+
+.cocktail-container.inactive {
+    opacity: 0;
+    display: none; 
+}
+
+.cocktail-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
     width: 100%;
-    background-color: Linen;
+    padding: 20px;
+}
+
+.cocktail-image {
+    width: 45%;
+    height: auto;
+    margin-right: 20px; 
+    
+}
+
+.cocktail-details {
+    width: 45%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    line-height: 2;
+}
+
+ul,ol {
+    margin-left: 40px; 
+    font-size: 1.2rem;
 }
