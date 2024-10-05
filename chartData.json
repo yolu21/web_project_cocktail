@@ -1,0 +1,61 @@
+{
+    "charts": [
+      {
+        "title": "20 popular cocktails main ingredients",
+        "data": [
+          ["Main ingredients", "Number of occurrences of ingredients"],
+          ["Vodka", 3],
+          ["Grapefruit juice", 2],
+          ["Lemon slices", 14],
+          ["Lime juice", 8],
+          ["Orange juice", 3],
+          ["Gin", 5],
+          ["Ounce rum", 2]
+        ],
+        "color": "rgb(90,20,18)",
+        "hAxis": {
+          "title": "",
+          "minValue": 0},
+        "vAxis": {
+          "title": "Ingredients"}
+      },
+      {
+        "title": "",
+        "data": [
+          ["", "Number of occurrences of ingredients"],
+          ["soda water", 2],
+          ["ice", 9],
+          ["Whiskey", 2],
+          ["White rum", 1],
+          ["Cassis liqueur", 1],
+          ["Blue Citrus Sweet Wine", 1],
+          ["Total", 14]
+        ],
+        "color": "rgb(125, 62, 62)",
+        "hAxis": {
+          "title": "",
+          "minValue": 0},
+        "vAxis": {
+          "title": ""}
+      },
+      {
+        "title": "",
+        "data": [
+          ["", "Number of occurrences of ingredients"],
+          ["Berry Gin", 2],
+          ["syrup", 4],
+          ["Tongning Water", 1],
+          ["White rum", 2],
+          ["Coke", 3],
+          ["Total", 14]
+        ],
+        "color": "rgb(200, 110, 110)",
+        "hAxis": {
+          "title": "Total Times of the use of ongredients",
+          "minValue": 0},
+        "vAxis": {
+          "title": ""}
+      }
+    ]
+  }
+  
