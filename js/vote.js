@@ -53,7 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('cocktailVotes', JSON.stringify(votes));
         
         // update vote chart
-        drawChart();
+        
     });
 
 });
+window.onload = function() {
+    drawChart();
+    setInterval(getChartData, 5000);
+};
