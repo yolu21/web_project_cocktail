@@ -26,6 +26,7 @@ body{
 .close-icon{
     display: none;
 }
+
 .nav {
     display: flex;
     gap: 30px;
@@ -37,6 +38,9 @@ body{
     position: relative;
     float: right;
     
+}
+.mobile-nav{
+    display: none;
 }
 .breeze-word{
     font-size: 2.5rem;
