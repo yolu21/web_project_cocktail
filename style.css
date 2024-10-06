@@ -268,7 +268,7 @@ ul,ol {
     margin-bottom: 50px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 768px) {
     .nav {
         display: none; 
     }
@@ -358,7 +358,7 @@ ul,ol {
 
 }
 
-@media (max-width: 280px) {
+@media (max-width: 499px) {
     .nav {
         display: none; 
     }
@@ -404,23 +404,23 @@ ul,ol {
     }
 
     .menu-icon i {
-        font-size: 30px; 
+        font-size: 25px; 
     }
 
     .breeze-word {
-        font-size: 30px;
+        font-size: 25px;
     }
     
     .logo{
-        width: 400px;
-        height: 250px;
+        width: 300px;
+        height: 180px;
     }
     .theme-word{
-        font-size: 25px;
+        font-size: 23px;
     }
     .dark-square{
-        height:15%;
-        width:45%;
+        height: 15%;
+        width: 45%;
         border:10px solid black;
     }
     .light-square{
@@ -439,7 +439,7 @@ ul,ol {
     .cocktail-image,
     .cocktail-details {
         width: 100%; 
-        margin: 0;    
+        margin: 0;   
     }
 
     .cocktail-details {
