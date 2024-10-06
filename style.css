@@ -189,3 +189,71 @@ ul,ol {
     margin-left: 40px; 
     font-size: 1.2rem;
 }
+
+.feedback {
+    color: black;
+    text-align: center;
+    position: relative;
+    top:20px;
+}
+
+.form-title {
+    
+    text-align: center;
+    color: black;
+}
+.radio-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 三列 */
+    position: relative;
+    top: 20px;
+    /* gap: 15px;  */
+}
+
+.radio-group label {
+    display: flex; /* 讓 label 的內容垂直置中 */
+    align-items: center;
+    margin: 10px 0;
+    margin-left: 30%;
+}
+
+.email-group { 
+    margin: 30px auto 20px 10%; /* 使元素靠左，並留出15%的左邊空間 */
+    display: flex; /* 使用 flex 讓 email 和 submit 並排 */
+    align-items: center; /* 確保 email 和 submit 垂直對齊 */
+}
+
+#email {
+    padding: 5px;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.form-submit {
+    margin-left: 20px; /* 控制按鈕與 email 欄位的距離 */
+    margin-top:30px;
+}
+#submitVote {
+    padding: 5px 10px;
+    background-color: rgb(90, 20, 18, 0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#submitVote:hover {
+    background-color: rgb(90, 20, 18);
+}
+.vote-word{
+    margin-top: 10px;
+}
+.result-title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#vote-div{
+    height: 80%;
+    margin-bottom: 50px;
+}
+

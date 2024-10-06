@@ -10,6 +10,7 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="js/barchart.js"></script>
     <script src="js/cocktail.js"></script>
+    <script src="js/vote.js"></script>
 </head>
 
 <body>
@@ -70,11 +71,34 @@
     <div id="chart3_div"></div>
 
     <div class="space"></div>
+
     <div class="pic" id="rate">
         <div class="container">
             <h1 class="light-square theme-word">RATE</h1>
         </div>
         <div class="dark-overlay"></div>
+    </div>
+    <div class="feedback">
+        <form id="voteForm">
+            <h1 class="form-title">調酒人氣調查</h1>
+            <div class="radio-group">
+                <label><input name="wine" type="radio" value="Salty Dog" checked> Salty Dog</label>
+                <label><input name="wine" type="radio" value="Vodka Lime"> Vodka Lime</label>
+                <label><input name="wine" type="radio" value="Screwdriver"> Screwdriver</label>
+                <label><input name="wine" type="radio" value="Orange Blossom"> Orange Blossom</label>
+                <label><input name="wine" type="radio" value="Gin Tonic"> Gin Tonic</label>
+                <label><input name="wine" type="radio" value="Bourbon Coke"> Bourbon Coke</label>
+                <label><input name="wine" type="radio" value="Mojito"> Mojito</label>
+                <label><input name="wine" type="radio" value="Godfather"> Godfather</label>
+                <label><input name="wine" type="radio" value="Long Island Iced Tea"> Long Island Iced Tea</label>
+            </div>
+            <div class="form-submit">
+                <button type="button" id="submitVote">Submit</button>
+            </div>
+        </form>
+    
+        <h1 class="result-title">調酒票數統計</h1>
+        <div id="vote-div"></div>
     </div>
 </body>
 </html>
