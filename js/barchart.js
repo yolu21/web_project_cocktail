@@ -3,7 +3,7 @@ google.charts.setOnLoadCallback(getChartData);
 
 // Fetch JSON data and create both charts
 function getChartData() {
-    fetch('../chartData.json')  // fetch JSON data
+    fetch('chartData.json')  // fetch JSON data
         .then(response => response.json())
         .then(data => {
             drawChart('chart1_div', data.charts[0]);  

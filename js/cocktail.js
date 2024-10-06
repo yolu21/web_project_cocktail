@@ -1,6 +1,6 @@
 let currentIndex = 0;
 
-fetch('../cocktail.json')
+fetch('cocktail.json')
     .then(response => response.json()) 
     .then(data => {
         const cocktails = data.cocktails;
