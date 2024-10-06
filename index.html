@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Breeze bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="js/barchart.js"></script>
     <script src="js/cocktail.js"></script>
     <script src="js/vote.js"></script>
+    <script src="js/menu.js"></script>
 </head>
 
 <body>
+    <!-- Header -->
     <div class="header">
         <a href="#home">
             <div class="breeze-word">BREEZE</div>
@@ -35,7 +38,31 @@
                 </a>
             </li>
         </ul>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+            <i class="close-icon fas fa-times"></i> 
+        </div>
     </div>
+    <!-- Header -->
+    <!-- Mobile Nav -->
+    <ul class="mobile-nav">
+        <li>
+            <a href="#cocktail" class="smoothScroll">
+                <div class="word">Cocktail</div>
+            </a>
+        </li>
+        <li>
+            <a href="#about" class="smoothScroll">
+                <div class="word">About</div>
+            </a>
+        </li>
+        <li>
+            <a href="#rate" class="smoothScroll">
+                <div class="word">Rate</div>
+            </a>
+        </li>
+    </ul>
+    <!-- Mobile Nav -->
     <div class="pic" id="home">
         <div class="container">
             <img src="pic/logo.png" alt="Logo" class="logo">
@@ -53,6 +80,7 @@
     </div>
 
     <div class="space"></div>
+
     <div id="cocktail-list"></div>
 
     <div class="space"></div>
@@ -101,4 +129,5 @@
         <div id="vote-div"></div>
     </div>
 </body>
+
 </html>

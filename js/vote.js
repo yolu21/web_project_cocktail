@@ -1,8 +1,8 @@
-// 加載 Google Charts
+// load google chart
 google.charts.load('current', { packages: ['corechart', 'bar'] });
 google.charts.setOnLoadCallback(drawVoteChart);
 
-// 初始化票數 (使用 LocalStorage 存儲)
+// initial votes value and get votes from localStorage
 const votes = JSON.parse(localStorage.getItem('cocktailVotes')) || {
     "Salty Dog": 0,
     "Vodka Lime": 0,
@@ -14,9 +14,9 @@ const votes = JSON.parse(localStorage.getItem('cocktailVotes')) || {
     "Godfather": 0,
     "Long Island Iced Tea": 0
 };
-// 繪製圖表
+// draw vote chart
 function drawVoteChart() {
-    // 將票數轉換成 Google Charts 所需的數據格式
+    // change votes object to array
     const dataArr = [['Cocktail', 'Votes']];
     for (const wine in votes) {
         dataArr.push([wine, votes[wine]]);
@@ -43,16 +43,16 @@ function drawVoteChart() {
     chart.draw(data, options);
 }
 
-// 提交投票邏輯
+// submit vote
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('submitVote').addEventListener('click', function () {
         const selectedWine = document.querySelector('input[name="wine"]:checked').value;
         votes[selectedWine]++;
         
-        // 將票數保存到 LocalStorage
+        // save votes to localStorage
         localStorage.setItem('cocktailVotes', JSON.stringify(votes));
         
-        // 更新圖表
+        // update vote chart
         drawChart();
     });
 

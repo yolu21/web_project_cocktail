@@ -3,17 +3,17 @@ google.charts.setOnLoadCallback(getChartData);
 
 // Fetch JSON data and create both charts
 function getChartData() {
-    fetch('../chartData.json')  // JSON 文件名稱
+    fetch('../chartData.json')  // fetch JSON data
         .then(response => response.json())
         .then(data => {
-            drawChart('chart1_div', data.charts[0]);  // 第一個圖表
-            drawChart('chart2_div', data.charts[1]); // 第二個圖表
+            drawChart('chart1_div', data.charts[0]);  
+            drawChart('chart2_div', data.charts[1]); 
             drawChart('chart3_div', data.charts[2]);
         })
         .catch(error => console.error('Error fetching JSON data:', error));
 }
 
-// 繪製圖表的函數，傳入不同的 div 和數據
+// draw chart
 function drawChart(divId, chartData) {
     var data = google.visualization.arrayToDataTable(chartData.data);
 

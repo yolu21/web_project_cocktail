@@ -13,6 +13,7 @@ fetch('cocktail.json')
             const cocktailContent = document.createElement('div');
             cocktailContent.classList.add('cocktail-content');
 
+            //show cocktail image
             const cocktailImg = document.createElement('img');
             cocktailImg.src = cocktail.image;
             cocktailImg.alt = cocktail.name;
@@ -22,10 +23,12 @@ fetch('cocktail.json')
             const cocktailDetails = document.createElement('div');
             cocktailDetails.classList.add('cocktail-details');
 
+            //show cocktail Title
             const cocktailTitle = document.createElement('h1');
             cocktailTitle.innerText = cocktail.name;
             cocktailDetails.appendChild(cocktailTitle);
      
+            //show cocktail ingredients
             const ingredientsTitle = document.createElement('h2');
             ingredientsTitle.innerHTML = `<strong>材料：</strong><br>` ;
             const ingredientsList = document.createElement('ul');
@@ -40,6 +43,7 @@ fetch('cocktail.json')
             const methodTitle = document.createElement('h2');
             const methodParagraph = document.createElement('ol');
 
+            //show cocktail method
             methodTitle.innerHTML = `<strong>做法：</strong><br>`;
             cocktail.method.forEach(method => {
                 const listItem = document.createElement('li');
